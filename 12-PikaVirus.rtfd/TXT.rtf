@@ -1,0 +1,245 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf460
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fmodern\fcharset0 Courier;\f2\fswiss\fcharset0 ArialMT;
+\f3\fnil\fcharset0 LucidaGrande;\f4\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red26\green33\blue47;\red64\green64\blue64;\red234\green234\blue234;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{circle\}}{\leveltext\leveltemplateid102\'01\uc0\u9702 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs46 \cf2 \expnd0\expndtw0\kerning0
+Challenge 12 - Pika Virus
+\fs32 \
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://contest.tuenti.net/Challenges?id=11"}}{\fldrslt \cf3 \'ab Prev}} {\field{\*\fldinst{HYPERLINK "https://contest.tuenti.net/Challenges?id=13"}}{\fldrslt \cf3 Next \'bb}}\
+Recently, there have been reports of a new virus called Pika that is spreading around the world. But, how is this virus spreading across the world? Have there been any other viruses that followed the same trends?\
+\pard\pardeftab720\partightenfactor0
+\cf2 {{\NeXTGraphic spread_virus.png \width6545 \height3272 \noorient
+}¬}\pard\pardeftab720\partightenfactor0
+\cf2 \
+Usually, a virus originates in a city or village and spreads from there to other nearby cities. From these cities, the virus is transmitted from one person to another, even reaching cities in other countries.\
+Assuming that one pandemic with these characteristics originates in a single city, does it spread in a different manner to other viruses? Which cities are infected with a virus that is equal to the original virus?\
+Two viruses, 
+\f1 a
+\f0  and 
+\f1 b
+\f0 , are similar if each city in which virus \'91a\'92 is present (a
+\fs24 i
+\fs32 ) has an equivalent to another city in which virus \'91b\'92 is present (b
+\fs24 k
+\fs32 ) and the virus spreads in the same manner (represented as a
+\fs24 i
+\fs32 /b
+\fs24 k
+\fs32 ).\
+In the following example, viruses \'91a\'92 and \'91b\'92 spread in a similar manner while viruses \'91a\'92 and \'91c\'92 spread in a different manner.\
+\pard\pardeftab720\partightenfactor0
+\cf2 {{\NeXTGraphic spread_examples.png \width23800 \height9120 \noorient
+}¬}\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs36 \cf2 \
+Input\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b0\fs32 \cf2 In the first line, an integer 
+\f1 N
+\f0  that represents the numbers of cities infected by the original virus 
+\f1 O
+\f0 . The number of jumps made by the virus while the pandemic was ongoing is always 
+\f1 N-1
+\f0 . The following 
+\f1 N-1
+\f0  lines indicate the jumps made by the virus. For each line, two cities 
+\f1 S
+\f0 , 
+\f1 D
+\f0  are written. 
+\f1 S
+\f0  indicates where the virus started and 
+\f1 D
+\f0  indicates where the virus reached with that jump.\
+The next line will indicate the number of viruses 
+\f1 T
+\f0  you need to compare with the original. For each virus to be compared, there will be 
+\f1 N-1
+\f0  lines to describe how it spreads around the world. They will have the same number of cities and jumps as the virus 
+\f1 O
+\f0 .\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs36 \cf2 Output\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b0\fs32 \cf2 For each case t, the output is the string "Case #t: " followed by the string with the answer. If that virus spreads in a different manner to the original virus, the string answer is \'91NO\'92. In the event that the viruses spread in the same manner, the string with the answer follows the structure:\
+a
+\fs24 0
+\fs32 /b
+\fs24 0
+\fs32  a
+\fs24 1
+\fs32 /b
+\fs24 1
+\fs32  \'85 a
+\fs24 N
+\fs32 /b
+\fs24 N
+\fs32 \
+where a
+\fs24 i
+\fs32  is a city of the original virus and b
+\fs24 i
+\fs32  is the city related to a
+\fs24 i
+\fs32 , and a
+\fs24 i
+\fs32  < a
+\fs24 i+1
+\fs32  (alphabetical order). Check the output examples.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs36 \cf2 Limits\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0
+\f0\b0\fs32 \cf2 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+3 \uc0\u8804  N \u8804  100\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+1 \uc0\u8804  T \u8804  500\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs36 \cf2 Assumptions\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\f0\b0\fs32 \cf2 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+The virus starts to spread from one single city.\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+The name of the cities will not contain spaces.\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+A city that has been infected by a virus cannot be infected again.\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Two viruses 
+\f1 A
+\f0  and 
+\f1 B
+\f0  spread in the same manner when the following conditions are met:\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls2\ilvl1\cf2 \kerning1\expnd0\expndtw0 {\listtext	
+\f3 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+The same number of cities have been infected by both viruses A and B.\
+\ls2\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f3 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+Every city infected by virus 
+\f1 A
+\f0  has an equivalent city infected by virus 
+\f1 B
+\f0 .\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Two cities are equivalent if the following conditions are met:\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls2\ilvl1\cf2 \kerning1\expnd0\expndtw0 {\listtext	
+\f3 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+Both cities have infected the same number of cities.\
+\ls2\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f3 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+Both cities have the same number of jumps to the first city where the virus started to spread.\
+\ls2\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f3 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+Ancestors of both cities may not be equivalent.\
+\ls2\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f3 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+Both cities will have the same spreading (paths) to the last cities where the pandemic was ongoing.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+If a city with the original virus (a
+\fs24 i
+\fs32 ) has more than one equivalent from the cities with another virus (b
+\fs24 j
+\fs32  and b
+\fs24 k
+\fs32  where b
+\fs24 j
+\fs32  < b
+\fs24 k
+\fs32 ), it will be related to the first city according to alphabetical order: (a
+\fs24 i
+\fs32 /b
+\fs24 j
+\fs32 )\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+A city with the original virus (a
+\fs24 i
+\fs32 ) cannot have more than one equivalent in the city with another virus (b
+\fs24 j
+\fs32 ) and vice versa. That is, each city with the original virus and each city with another virus must appear once and only once in the output.\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs36 \cf2 Sample Input 1\
+\pard\pardeftab720\partightenfactor0
+
+\f4\b0\fs32 \cf2 \cb4 6\
+saidres astrabudua\
+astrabudua villamiel\
+astrabudua belad\
+villamiel galdo\
+saidres valdestillas\
+3\
+foldada niembro\
+niembro touzas\
+foldada echalecu\
+touzas villayon\
+foldada paradasolana\
+longra gulpilleiras\
+gulpilleiras canellas\
+canellas idiazabal\
+longra sotolongo\
+gulpilleiras villarmeao\
+torms olas\
+torms ozana\
+torms claravalls\
+olas irazola\
+olas aldeadalba\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs36 \cf2 \cb1 Sample Output 1\
+\pard\pardeftab720\partightenfactor0
+
+\f4\b0\fs32 \cf2 \cb4 Case #1: NO\
+Case #2: astrabudua/gulpilleiras belad/villarmeao galdo/idiazabal saidres/longra valdestillas/sotolongo villamiel/canellas\
+Case #3: NO\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs36 \cf2 \cb1 Sample Input 2\
+\pard\pardeftab720\partightenfactor0
+
+\f4\b0\fs32 \cf2 \cb4 3\
+arditurre vall-llebrera\
+arditurre sumio\
+4\
+lazado eraul\
+eraul ifonche\
+sacedon cervera\
+sacedon agrade\
+lezo vacarisas\
+vacarisas vinebre\
+taballes palmar\
+taballes castrecias\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs36 \cf2 \cb1 Sample Output 2\
+\pard\pardeftab720\partightenfactor0
+
+\f4\b0\fs32 \cf2 \cb4 Case #1: NO\
+Case #2: arditurre/sacedon sumio/agrade vall-llebrera/cervera\
+Case #3: NO\
+Case #4: arditurre/taballes sumio/castrecias vall-llebrera/palmar\
+}

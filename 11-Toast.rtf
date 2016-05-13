@@ -1,0 +1,136 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf460
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 ArialMT;\f2\fnil\fcharset0 Monaco;
+}
+{\colortbl;\red255\green255\blue255;\red26\green33\blue47;\red64\green64\blue64;\red234\green234\blue234;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs46 \cf2 \expnd0\expndtw0\kerning0
+Challenge 11 - Toast
+\fs32 \
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://contest.tuenti.net/Challenges?id=10"}}{\fldrslt \cf3 \'ab Prev}} {\field{\*\fldinst{HYPERLINK "https://contest.tuenti.net/Challenges?id=12"}}{\fldrslt \cf3 Next \'bb}}\
+\
+You have 
+\b N
+\b0  piles of toast on your table with 
+\b M
+\b0  slices of toast in each and a very sharp knife. For some reason, you can't stop cutting the toast. Every second, you cut one of the piles in half and put one of the halves on top of the other half or on top of the table, forming a new pile.\
+How many seconds do you need to have exactly 
+\b K
+\b0  slices of toast on the table?\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 Input\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b0\fs32 \cf2 The first line will contain an integer 
+\b C
+\b0 , the number of cases for our problem.\
+\pard\pardeftab720\parhyphenfactor20\partightenfactor0
+
+\b \cf2 C
+\b0  lines follow, each with three integers 
+\b N
+\b0 , 
+\b M
+\b0  and 
+\b K
+\b0 .\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 Output\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b0\fs32 \cf2 For each case, a line starting with "Case #x: " followed by the number of seconds necessary to reach the desired amount of slices of toast. In the event that it's impossible, write IMPOSSIBLE instead. Every line is followed by a new line character.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 Examples\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2280\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx1234
+\clvertalc \clshdrawnil \clwWidth2280\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2468
+\clvertalc \clshdrawnil \clwWidth2280\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx3702
+\clvertalc \clshdrawnil \clwWidth2280\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4937
+\clvertalc \clshdrawnil \clwWidth2280\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx6171
+\clvertalc \clshdrawnil \clwWidth2540\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx7405
+\clvertalc \clshdrawnil \clwWidth4660\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f2\b0\fs32 \cf2 \cb4 Case 1:\
+\
+1 1 1\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Case 2:\
+\
+1 1 2\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Case 3:\
+\
+1 1 4\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Case 4:\
+\
+2 2 12\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Case 5:\
+\
+1 3 7\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Case 6:\
+\
+10 5 500\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Case 7:\
+\
+1234 13 13131313\cell \lastrow\row
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf2 \cb1 In Case 1, you need 0 seconds.\
+In Case 2, you need 1 second: cut the toast, and put the half anywhere.\
+In Case 3, you need 2 seconds: following the first cut you have a pile with 2 slices, and following the second cut you have a pile with 4 slices.\
+In Case 4, you need 3 seconds. One of the solutions is: following the first cut the resulting piles are (2, 4); following the second cut (2, 8), and following the third cut (4, 8).\
+In Case 5, you can't reach exactly 7 slices.\
+In Case 6, you need 10 seconds.\
+In Case 7, you need 29 seconds.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 Limits\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0
+\f0\b0\fs32 \cf2 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+1 \uc0\u8804  
+\b N, M, K
+\b0  \uc0\u8804  2
+\fs26 \super 63
+\fs32 \nosupersub \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 Sample Input\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b0\fs32 \cf2 \cb4 7\
+1 1 1\
+1 1 2\
+1 1 4\
+2 2 12\
+1 3 7\
+10 5 500\
+1234 13 13131313\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 \cb1 Sample Output\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b0\fs32 \cf2 \cb4 Case #1: 0\
+Case #2: 1\
+Case #3: 2\
+Case #4: 3\
+Case #5: IMPOSSIBLE\
+Case #6: 10\
+Case #7: 29\
+}

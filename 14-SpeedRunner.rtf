@@ -1,0 +1,269 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf460
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 ArialMT;\f2\fnil\fcharset0 Monaco;
+}
+{\colortbl;\red255\green255\blue255;\red26\green33\blue47;\red64\green64\blue64;\red29\green120\blue195;
+\red234\green234\blue234;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs46 \cf2 \expnd0\expndtw0\kerning0
+Challenge 14 - SpeedRunner
+\fs32 \
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://contest.tuenti.net/Challenges?id=13"}}{\fldrslt \cf3 \'ab Prev}} {\field{\*\fldinst{HYPERLINK "https://contest.tuenti.net/Challenges?id=15"}}{\fldrslt \cf3 Next \'bb}}\
+After watching some gaming streams last night, you have decided to become a {\field{\*\fldinst{HYPERLINK "https://en.wikipedia.org/wiki/Speedrun"}}{\fldrslt \cf4 Speedrunner}}. The first game that you want to master is a very simple platform game:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+A level has a tiled layout and is made of three different kinds of blocks: walls, ladders and empty blocks.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+The bottom part of a level (the last row) is always made of walls.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+The goal of the game is to reach the exit door of the level.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+To open the door, the character first needs to collect all the keys in the level.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+The character has 4 possible movements: left, right, up and down\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+The level wraps horizontally: if the character is in the leftmost position and goes left he appears in the rightmost position, and vice versa\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+The character can stand on walls and ladders.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+The character can move through ladders (and can't move through walls).\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+If the character is standing on a wall or ladder, he can jump one space.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+If the character is not standing anywhere or grabbing a ladder, he falls down (and he can't move left or right while falling).\
+\pard\pardeftab720\partightenfactor0
+\cf2 If you have any questions about the game, please take a look at the videos provided for the examples.\
+By pressing the keys WASD, you can move the character one space each frame (he also falls at one space per frame). Just in case: W is up (jump or go up a ladder), A is left, S is down and D is right. If you have any questions about the game, you can take a look at the animations in the input examples.\
+Obviously, your objective is to minimize the number of frames to finish a level. In the event that there is more than one path with the same amount of frames, you should pick the one that minimizes the number of keys pressed. Lastly, in the event that there is more than one path with these characteristics, you should pick the path whose sequence of keypresses is alphabetically the smallest. You can assume that you will always have to press at least one key to win.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 Input\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b0\fs32 \cf2 The input starts with an integer 
+\b C
+\b0  indicating the number of cases. Each case description starts with a line with two integers 
+\b N
+\b0  and 
+\b M
+\b0 , indicating the number of rows and columns of the level. This is followed by a set of 
+\b N
+\b0  lines with 
+\b M
+\b0  characters, describing the layout of the level:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+A dot '.' indicates an empty block\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+A sharp sign '#' indicates a wall\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+An 'H' indicates a ladder\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+An 'S' indicates the starting point for the character (it behaves like an empty block)\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+An 'E' indicates the exit of the level (it behaves like an empty block)\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+A 'K' indicates the placement of a key (it behaves like an empty block)\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 Output\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b0\fs32 \cf2 For each case, a line starting with "Case #x: ", followed by an integer indicating the number of frames of the ideal path and a string with the keypresses of the path. If it's not possible to complete a level, you should output the string "IMPOSSIBLE". Every line is followed by a new line character.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 Examples\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2520\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx1234
+\clvertalc \clshdrawnil \clwWidth2520\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2468
+\clvertalc \clshdrawnil \clwWidth2520\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx3702
+\clvertalc \clshdrawnil \clwWidth2540\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4937
+\clvertalc \clshdrawnil \clwWidth2540\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx6171
+\clvertalc \clshdrawnil \clwWidth2540\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx7405
+\clvertalc \clshdrawnil \clwWidth3420\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f2\b0\fs32 \cf2 \cb5 Case 1:\
+\
+2 3\
+#SE\
+###\
+\
+\
+\
+\
+\
+\
+\
+\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Case 2:\
+\
+2 3\
+S.E\
+###\
+\
+\
+\
+\
+\
+\
+\
+\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Case 3:\
+\
+3 3\
+.K.\
+S.E\
+###\
+\
+\
+\
+\
+\
+\
+\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Case 4:\
+\
+4 4\
+H..K\
+.H..\
+S..E\
+####\
+\
+\
+\
+\
+\
+\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Case 5:\
+\
+5 5\
+.S.K.\
+K#K.K\
+.KH#K\
+K.K.E\
+#####\
+\
+\
+\
+\
+\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Case 6:\
+\
+5 5\
+.S.K.\
+K#HK.\
+EKH#K\
+#.K#.\
+#####\
+\
+\
+\
+\
+\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Case 7:\
+\
+10 10\
+HK...HHH..\
+KH......K.\
+..###H..#.\
+.K...H...K\
+.#...H...H\
+.K...HK..H\
+.#H####..H\
+..H....HHH\
+..HSE...K.\
+##########\cell \lastrow\row
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf2 \cb1 In Case 1, you can win in 1 frame by pressing the key D.\
+In Case 2, you can win in 1 frame by pressing the key A.\
+In Case 3, you can win in 4 frames by pressing the sequence of keys DWD\
+In Case 4, you can win in 7 frames by pressing the sequence of keys DWWAA: {\field{\*\fldinst{HYPERLINK "http://asciinema.org/a/6vrvhwaps49jsqzxig3eke3jq"}}{\fldrslt \cf4 Video}}\
+In Case 5, you can win in 16 frames by pressing the sequence of keys ADWDWWDWD: {\field{\*\fldinst{HYPERLINK "http://asciinema.org/a/eza7uh5vrvwl4lgpabiz7kwa8"}}{\fldrslt \cf4 Video}}\
+In Case 6, you cannot win.\
+In Case 7, you can win in 75 frames: {\field{\*\fldinst{HYPERLINK "http://asciinema.org/a/3jzkf693i9c13i7vnq9awga5w"}}{\fldrslt \cf4 Video}}\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 Limits\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls3\ilvl0
+\f0\b0\fs32 \cf2 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+2 \uc0\u8804  
+\b N
+\b0 , 
+\b M
+\b0  \uc0\u8804  301\
+\ls3\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+0 \uc0\u8804  number of keys \u8804  16\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 Sample Input\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b0\fs32 \cf2 \cb5 7\
+2 3\
+#SE\
+###\
+2 3\
+S.E\
+###\
+3 3\
+.K.\
+S.E\
+###\
+4 4\
+H..K\
+.H..\
+S..E\
+####\
+5 5\
+.S.K.\
+K#K.K\
+.KH#K\
+K.K.E\
+#####\
+5 5\
+.S.K.\
+K#HK.\
+EKH#K\
+#.K#.\
+#####\
+10 10\
+HK...HHH..\
+KH......K.\
+..###H..#.\
+.K...H...K\
+.#...H...H\
+.K...HK..H\
+.#H####..H\
+..H....HHH\
+..HSE...K.\
+##########\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 \cb1 Sample Output\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b0\fs32 \cf2 \cb5 Case #1: 1 D\
+Case #2: 1 A\
+Case #3: 4 DWD\
+Case #4: 7 DWWAA\
+Case #5: 16 ADWDWWDWD\
+Case #6: IMPOSSIBLE\
+Case #7: 75 AWWWADDDDDAWWWWAAAAADDWWWDDDWWWWAAAAWSSDDDDWWWWWDDDDASSAAAA\
+}

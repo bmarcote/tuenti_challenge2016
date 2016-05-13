@@ -1,0 +1,182 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf460
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 ArialMT;\f2\fnil\fcharset0 Monaco;
+}
+{\colortbl;\red255\green255\blue255;\red26\green33\blue47;\red64\green64\blue64;\red234\green234\blue234;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs46 \cf2 \expnd0\expndtw0\kerning0
+Challenge 19 - Bricks and Bridges
+\fs32 \
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://contest.tuenti.net/Challenges?id=18"}}{\fldrslt \cf3 \'ab Prev}} {\field{\*\fldinst{HYPERLINK "https://contest.tuenti.net/Challenges?id=20"}}{\fldrslt \cf3 Next \'bb}}\
+After a long day's work, you get home and decide you are going to play your favorite game, B&B. \
+Bricks and Bridges is a really simple game. In each level you control your avatar in a room. This room is full of lava but there are some ledges linked by bridges. \
+The bridges are really brittle and if they break while you're crossing them, you die and have to start the level from scratch. You can cross them by stepping on them with differing force; the harder the force, the more you wear them out. \
+The aim of the game is to go from the entry to the exit passing through every ledge in the room without dying. Today, however, you are feeling lucky and want to achieve the elusive "Wrecking Ball". \
+What does this achievement require? Simple! You need to finish the level without leaving a single bridge up. The problem is that the levels are randomly generated and this achievement is not always possible, so you are going to make a program to see whether, for any given level, you should try it out or just search a different level. \
+To make things easier, you will be using a cheat that allows you to put the entry and the exit wherever you want on the map (maybe even on the same ledge). \
+\
+Game rules:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+There are several ledges in the level; one is the entry and another (maybe the same one) is the exit.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+The ledges may be linked by bridges; several bridges can link the same two ledges; each bridge links only two ledges.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+You must pass through every ledge on the level.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Bridges may be crossed in either direction and, once you begin crossing one, you must finish. You cannot stop or turn around.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Each bridge has a TOUGHNESS value.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Each time you cross a bridge, its TOUGHNESS value is reduced by your STEPFORCE.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+You may have several STEPFORCE settings to choose from, but once you start crossing a bridge you cannot change it until you reach the other ledge.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+You must choose one STEPFORCE from the options provided.\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 Input\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b0\fs32 \cf2 Firstly, you will be provided with an integer L, which means the number of Levels you have to solve. \
+For each level, you will be provided with a definition of the level: \
+Firstly you will be provided with the stepforces you are able to choose from: a line with the number of the stepforces available, S, followed by another line with S numbers, each representing one of the stepforces. \
+After that, B, the number of Bridges. \
+B lines follow, each composed of three integers: LEDGE_ORIGIN LEDGE_DEST BRIDGE_TOUGHNESS\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 Output\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b0\fs32 \cf2 For each level, you need to calculate whether the achievement is possible or not, outputting "Case #L: " followed by "I TOLD YOU SO from X to Y" if it is possible or "GOODBYE CRUEL WORLD" if it is not possible. X and Y are the start and end ledges. If there are several solutions, choose the one with the lowest start and end ledges, in ascending order.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 Limits\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b0\fs32 \cf2 1 \uc0\u8804  L \u8804  25 \
+1 \uc0\u8804  S \u8804  50 \
+1 \uc0\u8804  STEPFORCE \u8804  100 \
+1 \uc0\u8804  B \u8804  25000 \
+1 \uc0\u8804  BRIDGE_TOUGHNESS \u8804  1000\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 Sample Input\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b0\fs32 \cf2 \cb4 6\
+3\
+1 3 5\
+8\
+1 9 1\
+1 7 1\
+1 3 1\
+3 5 1\
+3 7 1\
+3 9 1\
+5 7 1\
+7 9 1\
+3\
+1 3 5\
+6\
+1 9 1\
+1 7 1\
+1 3 1\
+3 7 1\
+3 9 1\
+7 9 1\
+3\
+1 3 5\
+10\
+1 9 1\
+1 7 1\
+1 3 1\
+3 5 1\
+3 7 1\
+3 9 1\
+5 7 1\
+7 9 1\
+2 4 1\
+2 4 1\
+2\
+3 5\
+8\
+1 9 3 \
+1 7 3\
+1 3 3\
+3 5 3\
+3 7 3\
+3 9 3\
+5 7 3\
+7 9 4 \
+3\
+2 4 6\
+8\
+1 9 2\
+1 7 2\
+1 3 2\
+3 5 2\
+3 7 2\
+3 9 2\
+5 7 2\
+7 9 7\
+2\
+1 2\
+5\
+1 3 1\
+3 5 2\
+5 7 3 \
+5 9 1\
+7 9 1\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 \cb1 Sample Output\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b0\fs32 \cf2 \cb4 Case #1: I TOLD YOU SO from 1 to 9\
+Case #2: GOODBYE CRUEL WORLD\
+Case #3: GOODBYE CRUEL WORLD\
+Case #4: GOODBYE CRUEL WORLD\
+Case #5: GOODBYE CRUEL WORLD\
+Case #6: I TOLD YOU SO from 1 to 3\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 \cb1 Example\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b0\fs32 \cf2 In the example of Case 6: \
+\pard\pardeftab720\partightenfactor0
+\cf2 {{\NeXTGraphic bandb_diagram_feasible.png \width10460 \height3260 \noorient
+}¬}\pard\pardeftab720\partightenfactor0
+\cf2 \
+You have several solutions, showing 2 of them marked as: \
+FROM TO (FORCE) \
+\
+Solution 1:
+\f2 \cb4 \
+1 3 (1)\
+3 5 (2)\
+5 9 (1)\
+9 7 (1)\
+7 5 (2)\
+5 7 (1)\
+
+\f0 \cb1 Solution 2 (as you are required to provide the solution with the lowest start and end ledges, this is the solution you want, as it goes from 1 to 3):
+\f2 \cb4 \
+1 3 (1)\
+3 5 (1)\
+5 9 (1)\
+9 7 (1)\
+7 5 (1)\
+5 7 (1)\
+7 5 (1)\
+5 3 (1)\
+}

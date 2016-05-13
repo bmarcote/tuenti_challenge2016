@@ -1,0 +1,129 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf460
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 ArialMT;\f2\fnil\fcharset0 Monaco;
+}
+{\colortbl;\red255\green255\blue255;\red26\green33\blue47;\red64\green64\blue64;\red234\green234\blue234;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs46 \cf2 \expnd0\expndtw0\kerning0
+Challenge 17 - Mountain Trip
+\fs32 \
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://contest.tuenti.net/Challenges?id=16"}}{\fldrslt \cf3 \'ab Prev}} {\field{\*\fldinst{HYPERLINK "https://contest.tuenti.net/Challenges?id=18"}}{\fldrslt \cf3 Next \'bb}}\
+You are planning a 
+\b K
+\b0  days trip to the mountain with some friends. You have decided to follow a route, but you are not sure how far you and your friends should walk before going to sleep. Of course, as the only software engineer in your group of friends, it is your job to decide how much walking should be done each day!\
+You know the height of each km of the route from the starting point to the end, and you need to find a sequence 
+\b S
+\b0  of 
+\b K
+\b0  elements, where 
+\b S
+\fs24 i
+\b0\fs32  indicates how many km you walk that day.\
+You want to divide the route in such a way that the maximum amount of meters that you go up and down per day is minimal. Of course, you don't want to waste a perfect day for hiking, so you should walk at least 1 km every day. In the event that there is more than one possible solution, you should choose the solution in which you walk the lowest maximum amount of kilometers on any given day. Finally, in the event that there is more than one possible solution, you should choose the smallest one. (E.g.: 5 3 5 9 8 is smaller than 5 3 6 9 7)\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 Input\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b0\fs32 \cf2 The first line will contain an integer 
+\b C
+\b0 , the number of cases for our problem.\
+Each case consists of a line with two integers, 
+\b N
+\b0  and 
+\b K
+\b0 , the number of points in the height map and the number of days of the trip. A line with 
+\b N
+\b0  integers follows, representing the height map of the route.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 Output\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b0\fs32 \cf2 For each case, a line starting with "Case #x: " followed by 
+\b K
+\b0  integers in ascending order, each of them indicating how many km you walk that day.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 Examples\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2980\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth2980\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth7040\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth5720\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f2\b0\fs32 \cf2 \cb4 Case 1:\
+\
+4 3\
+0 1 2 3\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Case 2:\
+\
+4 2\
+0 1 3 6\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Case 3:\
+\
+10 3\
+0 1 3 6 4 5 9 7 4 5\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Case 4:\
+\
+7 3\
+2 -1 1 0 -2 0 3\cell \lastrow\row
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf2 \cb1 In Case 1, you walk 1 km on the 1st day, 1 km on the 2nd and 1 km on the 3rd. The amount of meters that you go up and down each day is 1.\
+In Case 2, you walk 2 km and 1 km. The amount of meters that you go up and down each day is 3.\
+In Case 3, you walk 3 km, 3 km and 3 km. The 1st day you go up and down 6 meters, the 2nd 7 and the 3rd 6. The maximum is 7.\
+In Case 4, you walk 2 km, 2 km and 2 km. The 1st day you go up and down 5 meters, the 2nd 3 and the 3rd 5. The maximum is 5.\
+Notice that you could have walked 2 km, 3 km and 1 km instead, but in that case the maximum amount of km walked on any given day would be 3 instead of 2.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 Limits\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0
+\f0\b0\fs32 \cf2 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+1 \uc0\u8804  
+\b K
+\b0  < 
+\b N
+\b0  \uc0\u8804  1000\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+-2
+\fs26 \super 31
+\fs32 \nosupersub  \uc0\u8804  height \u8804  2
+\fs26 \super 31
+\fs32 \nosupersub \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 Sample Input\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b0\fs32 \cf2 \cb4 4\
+4 3\
+0 1 2 3\
+4 2\
+0 1 3 6\
+10 3\
+0 1 3 6 4 5 9 7 4 5\
+7 3\
+2 -1 1 0 -2 0 3\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 \cb1 Sample Output\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b0\fs32 \cf2 \cb4 Case #1: 1 1 1\
+Case #2: 2 1\
+Case #3: 3 3 3\
+Case #4: 2 2 2\
+}

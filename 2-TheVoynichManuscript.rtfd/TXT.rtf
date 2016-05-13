@@ -1,0 +1,75 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf460
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 ArialMT;\f2\fnil\fcharset0 Monaco;
+}
+{\colortbl;\red255\green255\blue255;\red26\green33\blue47;\red64\green64\blue64;\red29\green120\blue195;
+\red234\green234\blue234;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs46 \cf2 \expnd0\expndtw0\kerning0
+Challenge 2 - The Voynich Manuscript
+\fs32 \
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://contest.tuenti.net/Challenges?id=1"}}{\fldrslt \cf3 \'ab Prev}} {\field{\*\fldinst{HYPERLINK "https://contest.tuenti.net/Challenges?id=3"}}{\fldrslt \cf3 Next \'bb}}\
+\pard\pardeftab720\partightenfactor0
+\cf2 {{\NeXTGraphic voynich.jpg \width2810 \height3686 \noorient
+}¬}\pard\pardeftab720\partightenfactor0
+\cf2 \
+The Voynich manuscript is an illustrated codex hand-written in an unknown writing system.\
+The vellum on which it is written has been carbon-dated to the early 15th century, and it may have been composed in Northern Italy during the Italian Renaissance.\
+The manuscript is named after Wilfrid Voynich, a Polish book dealer who purchased it in 1912.\
+The Voynich manuscript has been studied by many professional and amateur cryptographers, including American and British codebreakers from both World War I and World War II. No one has yet succeeded in deciphering the text, and it has become a famous case in the history of cryptography. The mystery of the meaning and origin of the manuscript has excited the popular imagination, making the manuscript the subject of novels and speculation. None of the many hypotheses proposed over the last hundred years has yet been independently verified.\
+(On the right, a photograph of a page of this mysterious manuscript, from the Beinecke Rare Book & Manuscript Library, Yale University)\
+In recent times, it has been declared that the corpus of this manuscript approximately follows Zipf\'92s law, which states that given some corpus of natural language utterances, the frequency of any word is inversely proportional to its rank in the frequency table. Thus the most frequent word will occur approximately twice as often as the second most frequent word, three times as often as the third most frequent word, etc.\
+So, as the lead computer scientist at Yale University Library, you are determined to put an end to this mystery and solve whether the Voynich Manuscript is really written in a natural language or whether it is some kind of encrypted book.\
+In order to do so, you will develop a code that is able to determine which fragments of a corpus follow Zipf\'92s law and see which are the most frequent words and how frequently they appear.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 Input\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b0\fs32 \cf2 The downloadable {\field{\*\fldinst{HYPERLINK "https://contest.tuenti.net/resources/corpus.txt"}}{\fldrslt \cf4 corpus}} text of a sample manuscript with words separated by spaces.\
+In the first line, the number of fragments to check from the manuscript, N.\
+Each case is described in a line with two ordinal integers, A and B, that determine the first and the last word\'a0of the fragment to check.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 Output\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b0\fs32 \cf2 For each case, the output is the string "Case #t:" followed by the first word and the number of literal appearances (frequency) separated by a space, the second word and its frequency, and the third word and its frequency, separated by commas.\
+We can assure you that the three words that appear most frequently will not appear the same number of times as each other.\
+Check the output example.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 Limits\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b0\fs32 \cf2 1 <= N <= 5000\
+1 <= A,B <= 35000\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 Sample input\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b0\fs32 \cf2 Considering the following manuscript:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth18840\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Blue White Aqua Azure Beige Lavender White Black Blue Lavender Blue Brown Khaki Blue Brown Blue White Khaki Blue Cyan Brown Gold White Blue Lavender White Lavender White Ivory Khaki Lavender Beige Lime Magenta\cell \lastrow\row
+\pard\pardeftab720\partightenfactor0
+\cf2 And the following input\
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf2 \cb5 2\
+11 22\
+5 28\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 \cb1 Sample output\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b0\fs32 \cf2 \cb5 Case #1: Blue 4,Brown 3,Khaki 2\
+Case #2: Blue 6,White 5,Lavender 4\
+}

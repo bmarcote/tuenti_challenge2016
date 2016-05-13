@@ -1,0 +1,168 @@
+--2016-04-30 02:01:08--  http://52.49.91.111:1986/
+Conectando con 52.49.91.111:1986... conectado.
+Petici'on HTTP enviada, esperando respuesta... 200 Sin cabeceras, supondremos HTTP/0.9
+Longitud: no especificado
+Grabando a: "52.49.91.111:1986/index.html"
+
+52.49.91.111:1986/index.     [            <=>                    ]     448  --.-KB/s               52.49.91.111:1986/index.     [             <=>                   ]     448  --.-KB/s    in 10h 29m 
+
+2016-04-30 12:30:29 (0.01 B/s) - Error de lectura en el byte 448 (Operation timed out).Reintentando.
+
+--2016-04-30 12:30:30--  (intento: 2)  http://52.49.91.111:1986/
+Conectando con 52.49.91.111:1986... conectado.
+Petici'on HTTP enviada, esperando respuesta... 200 Sin cabeceras, supondremos HTTP/0.9
+Longitud: no especificado
+Grabando a: "52.49.91.111:1986/index.html"
+
+     0K                                                        15.1K=0.03s
+
+2016-04-30 12:45:30 (15.1 KB/s) - Error de lectura en el byte 504 (Success).Reintentando.
+
+--2016-04-30 12:45:32--  (intento: 3)  http://52.49.91.111:1986/
+Conectando con 52.49.91.111:1986... conectado.
+Petici'on HTTP enviada, esperando respuesta... 200 Sin cabeceras, supondremos HTTP/0.9
+Longitud: no especificado
+Grabando a: "52.49.91.111:1986/index.html"
+
+     0K                                                        14.5K=0.03s
+
+2016-04-30 13:00:32 (14.5 KB/s) - Error de lectura en el byte 504 (Success).Reintentando.
+
+--2016-04-30 13:00:35--  (intento: 4)  http://52.49.91.111:1986/
+Conectando con 52.49.91.111:1986... conectado.
+Petici'on HTTP enviada, esperando respuesta... 200 Sin cabeceras, supondremos HTTP/0.9
+Longitud: no especificado
+Grabando a: "52.49.91.111:1986/index.html"
+
+     0K                                                        5.75K=0.09s
+
+2016-04-30 13:15:35 (5.75 KB/s) - Error de lectura en el byte 504 (Success).Reintentando.
+
+--2016-04-30 13:15:39--  (intento: 5)  http://52.49.91.111:1986/
+Conectando con 52.49.91.111:1986... conectado.
+Petici'on HTTP enviada, esperando respuesta... 200 Sin cabeceras, supondremos HTTP/0.9
+Longitud: no especificado
+Grabando a: "52.49.91.111:1986/index.html"
+
+     0K                                                        15.6K=0.03s
+
+2016-04-30 13:30:39 (15.6 KB/s) - Error de lectura en el byte 504 (Success).Reintentando.
+
+--2016-04-30 13:30:44--  (intento: 6)  http://52.49.91.111:1986/
+Conectando con 52.49.91.111:1986... conectado.
+Petici'on HTTP enviada, esperando respuesta... 200 Sin cabeceras, supondremos HTTP/0.9
+Longitud: no especificado
+Grabando a: "52.49.91.111:1986/index.html"
+
+     0K                                                        15.2K=0.03s
+
+2016-04-30 13:45:45 (15.2 KB/s) - Error de lectura en el byte 504 (Success).Reintentando.
+
+--2016-04-30 13:45:51--  (intento: 7)  http://52.49.91.111:1986/
+Conectando con 52.49.91.111:1986... conectado.
+Petici'on HTTP enviada, esperando respuesta... 200 Sin cabeceras, supondremos HTTP/0.9
+Longitud: no especificado
+Grabando a: "52.49.91.111:1986/index.html"
+
+     0K                                                        15.8K=0.03s
+
+2016-04-30 14:00:51 (15.8 KB/s) - Error de lectura en el byte 504 (Success).Reintentando.
+
+--2016-04-30 14:00:58--  (intento: 8)  http://52.49.91.111:1986/
+Conectando con 52.49.91.111:1986... conectado.
+Petici'on HTTP enviada, esperando respuesta... 200 Sin cabeceras, supondremos HTTP/0.9
+Longitud: no especificado
+Grabando a: "52.49.91.111:1986/index.html"
+
+     0K                                                        16.5K=0.03s
+
+2016-04-30 14:15:58 (16.5 KB/s) - Error de lectura en el byte 504 (Success).Reintentando.
+
+--2016-04-30 14:16:06--  (intento: 9)  http://52.49.91.111:1986/
+Conectando con 52.49.91.111:1986... conectado.
+Petici'on HTTP enviada, esperando respuesta... 200 Sin cabeceras, supondremos HTTP/0.9
+Longitud: no especificado
+Grabando a: "52.49.91.111:1986/index.html"
+
+     0K                                                        15.4K=0.03s
+
+2016-04-30 14:31:06 (15.4 KB/s) - Error de lectura en el byte 504 (Success).Reintentando.
+
+--2016-04-30 14:31:15--  (intento:10)  http://52.49.91.111:1986/
+Conectando con 52.49.91.111:1986... conectado.
+Petici'on HTTP enviada, esperando respuesta... 200 Sin cabeceras, supondremos HTTP/0.9
+Longitud: no especificado
+Grabando a: "52.49.91.111:1986/index.html"
+
+     0K                                                        14.6K=0.03s
+
+2016-04-30 14:46:15 (14.6 KB/s) - Error de lectura en el byte 504 (Success).Reintentando.
+
+--2016-04-30 14:46:25--  (intento:11)  http://52.49.91.111:1986/
+Conectando con 52.49.91.111:1986... conectado.
+Petici'on HTTP enviada, esperando respuesta... 200 Sin cabeceras, supondremos HTTP/0.9
+Longitud: no especificado
+Grabando a: "52.49.91.111:1986/index.html"
+
+     0K                                                        15.9K=0.03s
+
+2016-04-30 15:01:25 (15.9 KB/s) - Error de lectura en el byte 504 (Success).Reintentando.
+
+--2016-04-30 15:01:35--  (intento:12)  http://52.49.91.111:1986/
+Conectando con 52.49.91.111:1986... conectado.
+Petici'on HTTP enviada, esperando respuesta... 200 Sin cabeceras, supondremos HTTP/0.9
+Longitud: no especificado
+Grabando a: "52.49.91.111:1986/index.html"
+
+     0K                                                        14.6K=0.03s
+
+2016-04-30 15:16:35 (14.6 KB/s) - Error de lectura en el byte 504 (Success).Reintentando.
+
+--2016-04-30 15:16:45--  (intento:13)  http://52.49.91.111:1986/
+Conectando con 52.49.91.111:1986... conectado.
+Petici'on HTTP enviada, esperando respuesta... 200 Sin cabeceras, supondremos HTTP/0.9
+Longitud: no especificado
+Grabando a: "52.49.91.111:1986/index.html"
+
+     0K                                                        15.7K=0.03s
+
+2016-04-30 15:31:45 (15.7 KB/s) - Error de lectura en el byte 504 (Success).Reintentando.
+
+--2016-04-30 15:31:55--  (intento:14)  http://52.49.91.111:1986/
+Conectando con 52.49.91.111:1986... conectado.
+Petici'on HTTP enviada, esperando respuesta... 200 Sin cabeceras, supondremos HTTP/0.9
+Longitud: no especificado
+Grabando a: "52.49.91.111:1986/index.html"
+
+     0K                                                        7.09K=0.07s
+
+2016-04-30 15:46:55 (7.09 KB/s) - Error de lectura en el byte 504 (Success).Reintentando.
+
+--2016-04-30 15:47:05--  (intento:15)  http://52.49.91.111:1986/
+Conectando con 52.49.91.111:1986... conectado.
+Petici'on HTTP enviada, esperando respuesta... 200 Sin cabeceras, supondremos HTTP/0.9
+Longitud: no especificado
+Grabando a: "52.49.91.111:1986/index.html"
+
+     0K                                                        15.8K=0.03s
+
+2016-04-30 16:17:02 (15.8 KB/s) - Error de lectura en el byte 504 (Success).Reintentando.
+
+--2016-04-30 16:17:12--  (intento:16)  http://52.49.91.111:1986/
+Conectando con 52.49.91.111:1986... conectado.
+Petici'on HTTP enviada, esperando respuesta... Error de lectura (Operation timed out) en las cabeceras.
+Reintentando.
+
+--2016-04-30 16:18:48--  (intento:17)  http://52.49.91.111:1986/
+Conectando con 52.49.91.111:1986... conectado.
+Petici'on HTTP enviada, esperando respuesta... 200 Sin cabeceras, supondremos HTTP/0.9
+Longitud: no especificado
+Grabando a: "52.49.91.111:1986/index.html"
+
+     0K                                                        1.30 =5m46s
+
+2016-04-30 16:32:04 (1.30 B/s) - "52.49.91.111:1986/index.html" guardado [448]
+
+ACABADO --2016-04-30 16:32:04--
+Tiempo total de reloj: 14h 30m 57s
+Descargados: 1 ficheros, 448 en 10h 35m 7s (0.01 B/s)
